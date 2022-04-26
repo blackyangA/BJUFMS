@@ -7,11 +7,14 @@ __pycache__/
 *.so
 
 media/
-#app_common/migrations/
-#app_files/migrations/
+app_common/migrations/
+app_files/migrations/
+
+/.idea/
 
 # Distribution / packaging
 .Python
+
 build/
 develop-eggs/
 dist/

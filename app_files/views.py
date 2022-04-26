@@ -21,6 +21,10 @@ class DocumentFileViewSet(ModelViewSet):
     serializer_class = DocumentFileSerializer
     permission_classes = [permissions.IsAdminUser | (ReadOnly & permissions.IsAuthenticated)]
 
+    def create(self, request, *args, **kwargs):
+        print(f"create data:{request.data}")
+        return super(DocumentFileViewSet, self).create(request, *args, **kwargs)
+
 
 class AccountingFileViewSet(ModelViewSet):
     """
