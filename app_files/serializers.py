@@ -5,9 +5,47 @@ import logging
 from rest_framework import serializers
 
 from utils.audit_serializer import AuditSerializer
-from .models import DocumentFileModel, AccountingFileModel, PhysicalFileModel, ElectronicFileModel
+from .models import (DocumentFileModel, AccountingFileModel, PhysicalFileModel, ElectronicFileModel,
+                     ProjectApprovalInformationModel, BudgetInformationModel, AuditinformationModel,
+                     LaunchInformationModel, AcceptanceInformationModel, ProjectManagementModel)
 
 logger = logging.getLogger(__name__)
+
+
+class ProjectApprovalInformationSerializer(AuditSerializer, serializers.ModelSerializer):
+    class Meta:
+        model = ProjectApprovalInformationModel
+        fields = "__all__"
+
+
+class BudgetInformationSerializer(AuditSerializer, serializers.ModelSerializer):
+    class Meta:
+        model = BudgetInformationModel
+        fields = "__all__"
+
+
+class AuditinformationSerializer(AuditSerializer, serializers.ModelSerializer):
+    class Meta:
+        model = AuditinformationModel
+        fields = "__all__"
+
+
+class LaunchInformationSerializer(AuditSerializer, serializers.ModelSerializer):
+    class Meta:
+        model = LaunchInformationModel
+        fields = "__all__"
+
+
+class AcceptanceInformationSerializer(AuditSerializer, serializers.ModelSerializer):
+    class Meta:
+        model = AcceptanceInformationModel
+        fields = "__all__"
+
+
+class ProjectManagementSerializer(AuditSerializer, serializers.ModelSerializer):
+    class Meta:
+        model = ProjectManagementModel
+        fields = "__all__"
 
 
 class DocumentFileSerializer(AuditSerializer, serializers.ModelSerializer):
