@@ -9,7 +9,7 @@ backcall==0.2.0
 black==22.1.0
 blessed==1.19.1
 cachetools==5.0.0
-certifi==2021.10.8
+certifi==2023.7.22
 charset-normalizer==2.0.12
 click==8.0.4
 coreapi==2.3.3
