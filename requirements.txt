@@ -103,6 +103,6 @@ uritemplate==4.1.1
 urllib3==1.26.8
 waitress==2.0.0
 wcwidth==0.2.5
-Werkzeug==2.1.1
+Werkzeug==3.0.1
 wrapt==1.14.0
 zipp==3.7.0
