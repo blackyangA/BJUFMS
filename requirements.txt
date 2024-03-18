@@ -6,7 +6,7 @@ asttokens==2.0.5
 astunparse==1.6.3
 attrs==21.4.0
 backcall==0.2.0
-black==22.1.0
+black==24.3.0
 blessed==1.19.1
 cachetools==5.0.0
 certifi==2021.10.8
