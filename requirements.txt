@@ -23,7 +23,7 @@ django-picklefield==3.0.1
 django-q==1.3.9
 djangorestframework==3.13.1
 djangorestframework-csv==2.1.1
-djangorestframework-simplejwt==5.0.0
+djangorestframework-simplejwt==5.5.1
 drf-excel==1.0.0
 drf-renderer-xlsx==1.0.0
 drf-yasg==1.20.0
